@@ -1,0 +1,31 @@
+JOE PAUL K — UPDATED GITHUB PROFILE PACKAGE
+=============================================
+
+This is the revised banner. It has a dark translucent panel behind all text,
+so the words remain readable against the workstation photo.
+
+UPLOAD:
+1. Replace the root README.md with this package's README.md.
+2. Upload the hero folder and all its contents.
+3. Keep your existing Setup.png in the repository root. Do not delete it.
+4. Commit changes to main.
+
+REPOSITORY STRUCTURE:
+j0E9/
+├── README.md
+├── Setup.png                 (keep your existing photo)
+└── hero/
+    ├── hero.gif              (animated banner displayed by README)
+    ├── index.html            (editable HTML preview source)
+    ├── styles.css            (editable CSS preview source)
+    ├── build_gif.py          (Python source that generates the GIF)
+    └── requirements.txt      (Pillow dependency)
+
+REBUILD LATER:
+From the repository root:
+    python -m pip install -r hero/requirements.txt
+    python hero/build_gif.py
+
+GitHub README does not load custom CSS or JavaScript. The README displays the
+rendered GIF. Edit HTML/CSS for your local preview and edit build_gif.py to
+change the generated animated banner.
