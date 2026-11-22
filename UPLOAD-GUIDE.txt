@@ -1,40 +1,30 @@
-JOE PAUL K — CV-ALIGNED GITHUB PROFILE UPDATE
-================================================
+JOE PAUL K — GITHUB PROFILE README PACKAGE
 
-This package updates your PROFILE README and animated hero banner.
-
-WHAT CHANGED
-- Profile content is aligned with your uploaded CV.
-- Removed the phrase "Building practical AI solutions..." from the hero.
-- Removed the opaque grey/dark rectangular card completely.
-- Uses your existing Setup.png as the full background.
-- Animated text is layered directly over the photograph.
-- Text is positioned in the upper wall/curtain area to avoid covering the
-  monitors and the DGX Spark device on the desk.
-
-UPLOAD TO YOUR j0E9/j0E9 PROFILE REPOSITORY
-1. Replace the root README.md with this package's README.md.
-2. Replace the existing hero folder with this package's hero folder.
-3. Keep the existing Setup.png in the repository root. Do not delete it.
+UPLOAD THESE FILES:
+1. Replace the repository root README.md with this package's README.md.
+2. Upload the complete hero/ folder, including background.jpg.
+3. Do not upload the original full-resolution Setup.png for this banner.
 4. Commit the changes to main.
 
-EXPECTED STRUCTURE
+STRUCTURE:
 j0E9/
 ├── README.md
-├── Setup.png                 (existing background photo; keep it)
 └── hero/
-    ├── hero.gif              (animated banner shown in README)
-    ├── index.html            (editable HTML source)
-    ├── styles.css            (editable CSS source)
-    ├── build_gif.py          (Python source to regenerate the GIF)
+    ├── hero.gif              animated banner embedded in README
+    ├── background.jpg        compact 1000 x 350 banner background
+    ├── index.html            editable local HTML preview
+    ├── styles.css            editable CSS source
+    ├── build_gif.py          Python source that builds the animated GIF
     └── requirements.txt
 
-IMPORTANT
-GitHub README does not execute a separate CSS file. The README displays the
-generated hero.gif. You can edit the HTML/CSS and Python source, then regenerate
-hero.gif when you want to change the design or animation.
+The compact background crop is centered around the DGX Spark unit beneath
+the monitors, while keeping the laptop, keyboard and mouse visible. The
+original full-resolution photo is not included in this ZIP.
 
-TO REGENERATE LATER
+REBUILD THE GIF LATER:
 From the repository root:
-  python -m pip install -r hero/requirements.txt
-  python hero/build_gif.py
+    python -m pip install -r hero/requirements.txt
+    python hero/build_gif.py
+
+GitHub README does not execute custom CSS/JavaScript. It displays hero.gif.
+The HTML/CSS are editable source files for local preview and future learning.
