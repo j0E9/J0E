@@ -4,8 +4,8 @@
   color-scheme: dark;
   --ink: #f4f7f6;
   --muted: #c2ccca;
-  --accent: #00d9b5;
-  --accent-soft: rgba(0, 217, 181, .18);
+  --accent: #e5ad62;
+  --accent-soft: rgba(229, 173, 98, .18);
   --page: #080b0d;
 }
 
@@ -60,8 +60,8 @@ body {
   opacity: .16;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(0, 217, 181, .13) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 217, 181, .13) 1px, transparent 1px);
+    linear-gradient(rgba(229, 173, 98, .11) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(229, 173, 98, .11) 1px, transparent 1px);
   background-size: 54px 54px;
   mask-image: linear-gradient(to bottom, black, transparent 78%);
 }
@@ -95,7 +95,7 @@ body {
 
 .name__accent {
   color: var(--accent);
-  text-shadow: 0 0 25px rgba(0, 217, 181, .5);
+  text-shadow: 0 0 25px rgba(229, 173, 98, .48);
 }
 
 .divider {
@@ -103,7 +103,7 @@ body {
   height: 2px;
   margin: 27px 0 24px;
   background: linear-gradient(90deg, transparent, var(--accent), transparent);
-  box-shadow: 0 0 15px rgba(0, 217, 181, .72);
+  box-shadow: 0 0 15px rgba(229, 173, 98, .62);
   transform-origin: center;
   animation: divider-pulse 3.2s ease-in-out infinite;
 }
@@ -161,7 +161,7 @@ body {
   border: 1px solid rgba(0, 217, 181, .86);
   border-radius: 999px;
   background: rgba(3, 17, 16, .78);
-  box-shadow: 0 0 22px rgba(0, 217, 181, .16), inset 0 0 18px rgba(0, 217, 181, .07);
+  box-shadow: 0 0 22px rgba(229, 173, 98, .16), inset 0 0 18px rgba(229, 173, 98, .06);
   font: 15px "DM Mono", monospace;
 }
 .terminal__prompt { color: var(--accent); font-weight: 500; font-size: 20px; }
@@ -195,7 +195,7 @@ body {
 .hero__links a:hover {
   color: var(--accent);
   border-color: var(--accent);
-  background: rgba(0, 217, 181, .08);
+  background: rgba(229, 173, 98, .08);
 }
 .hero__links span { color: var(--accent); }
 
@@ -205,7 +205,7 @@ body {
   height: 5px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 13px 3px rgba(0, 217, 181, .45);
+  box-shadow: 0 0 13px 3px rgba(229, 173, 98, .42);
   pointer-events: none;
   animation: float 6s ease-in-out infinite;
 }
@@ -221,7 +221,7 @@ body {
   opacity: .38;
   pointer-events: none;
   background: linear-gradient(90deg, transparent, rgba(0, 217, 181, .7), transparent);
-  box-shadow: 0 0 18px rgba(0, 217, 181, .5);
+  box-shadow: 0 0 18px rgba(229, 173, 98, .48);
   animation: scan 9s linear infinite;
 }
 
