@@ -3,78 +3,169 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#080b0d">
+  <meta name="theme-color" content="#080808">
   <meta name="description" content="Joe Paul K — AI/ML Engineer building practical intelligent systems.">
   <title>Joe Paul K | AI/ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Joe home"><span class="brand-mark">╱╱</span> JOE</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Let's Connect <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </header>
+
   <main>
-    <section class="hero" aria-label="Joe Paul K — AI/ML Engineer">
-      <!-- Static photo layer: keep Setup.png beside index.html -->
-      <div class="hero__background" aria-hidden="true"></div>
-      <div class="hero__shade" aria-hidden="true"></div>
-      <div class="hero__grid" aria-hidden="true"></div>
-
-      <!-- Independent animated foreground layer -->
-      <div class="hero__content">
-        <p class="eyebrow reveal reveal--1">HELLO, I'M</p>
-
-        <h1 class="name reveal reveal--2">
-          JOE PAUL <span class="name__accent">K</span>
-        </h1>
-
-        <div class="divider reveal reveal--3" aria-hidden="true"></div>
-
-        <p class="role reveal reveal--4">
-          <span class="corner corner--left" aria-hidden="true"></span>
-          AI/ML ENGINEER
-          <span class="corner corner--right" aria-hidden="true"></span>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">HELLO, I'M JOE <span class="eyebrow-line"></span></p>
+        <h1 class="reveal delay-1">JOE PAUL <span>K</span></h1>
+        <div class="role-frame reveal delay-2"><span>AI/ML ENGINEER</span></div>
+        <p class="hero-description reveal delay-3">
+          Building practical AI solutions at the intersection of machine learning,
+          computer vision and real-world software.
         </p>
-
-        <p class="skills reveal reveal--5">
-          <span>Python</span>
-          <i></i><span>Computer Vision</span>
-          <i></i><span>LLMs</span>
-          <i></i><span>MLOps</span>
-          <i></i><span>Intelligent Systems</span>
-        </p>
-
-        <div class="terminal reveal reveal--6">
-          <span class="terminal__prompt">&gt;</span>
-          <span class="terminal__text">Building practical AI solutions...</span>
-          <span class="terminal__cursor" aria-hidden="true"></span>
+        <div class="hero-actions reveal delay-4">
+          <a class="button button-primary" href="#projects">View Projects <span>↗</span></a>
+          <a class="button button-outline" href="#contact"><span class="mail-icon">✉</span> Contact Me</a>
         </div>
-
-        <nav class="hero__links reveal reveal--7" aria-label="Social links">
-          <a href="https://github.com/j0E9" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+        <div class="social-links reveal delay-5" aria-label="Social links">
+          <a href="https://github.com/j0E9" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
           <!-- Replace # with your LinkedIn profile URL -->
-          <a href="#" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
-          <!-- Replace # with your portfolio or email link -->
-          <a href="mailto:hello@example.com">Contact <span>↗</span></a>
-        </nav>
+          <a href="#" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+          <!-- Replace # with your YouTube channel URL if you want to show it -->
+          <a href="#" target="_blank" rel="noreferrer" aria-label="YouTube">▶</a>
+          <a href="mailto:YOUR_EMAIL@example.com" aria-label="Email">✉</a>
+        </div>
       </div>
 
-      <div class="ambient-dot ambient-dot--one" aria-hidden="true"></div>
-      <div class="ambient-dot ambient-dot--two" aria-hidden="true"></div>
-      <div class="scanline" aria-hidden="true"></div>
-
-      <a class="scroll-cue" href="#about" aria-label="Scroll to about section">
-        <span></span>
-      </a>
+      <div class="hero-visual reveal delay-2">
+        <!-- Keep Setup.png as a separate file in the repository root. -->
+        <div class="photo-frame">
+          <img src="./Setup.png" alt="Joe working at a multi-monitor workstation">
+          <div class="photo-vignette"></div>
+          <div class="photo-tag"><span class="status-dot"></span> BUILDING INTELLIGENT SYSTEMS</div>
+        </div>
+        <span class="orbit orbit-one" aria-hidden="true"></span>
+        <span class="orbit orbit-two" aria-hidden="true"></span>
+        <span class="visual-cross" aria-hidden="true">✳</span>
+      </div>
+      <div class="hero-bottom-line" aria-hidden="true"></div>
     </section>
 
-    <section class="about" id="about">
-      <p class="about__label">01 / ABOUT</p>
-      <div>
-        <h2>Building useful things with AI.</h2>
-        <p>
-          I'm Joe, an AI/ML engineer focused on Python, machine learning,
-          computer vision and practical LLM applications. I enjoy turning
-          ideas into dependable software.
-        </p>
+    <section class="about section-wrap section-divider" id="about">
+      <div class="section-heading">
+        <p class="section-kicker">01 / ABOUT ME</p>
+        <h2>Crafting Intelligent<br>Systems for <span>Real Impact</span></h2>
       </div>
+      <div class="about-copy">
+        <p>
+          I'm an AI/ML engineer who enjoys turning ideas into useful, working systems.
+          My interests include machine learning, computer vision, local AI assistants
+          and practical LLM applications.
+        </p>
+        <p>
+          I care about more than model accuracy: I enjoy connecting models with data,
+          APIs and interfaces to create software that solves real problems.
+        </p>
+        <div class="stats">
+          <div><strong>5+</strong><span>Projects & experiments</span></div>
+          <div><strong>2+</strong><span>Years learning & building</span></div>
+          <div><strong>AI</strong><span>Areas of focus</span></div>
+        </div>
+      </div>
+      <div class="about-symbol" aria-hidden="true">╱╱</div>
+    </section>
+
+    <section class="skills-section section-wrap section-divider" id="skills">
+      <div class="section-heading compact">
+        <p class="section-kicker">02 / TECH STACK</p>
+        <h2>Tools & Technologies<br><span>I Work With</span></h2>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-card"><b>Py</b><span>Python</span></div>
+        <div class="tech-card"><b>PT</b><span>PyTorch</span></div>
+        <div class="tech-card"><b>TF</b><span>TensorFlow</span></div>
+        <div class="tech-card"><b>CV</b><span>OpenCV</span></div>
+        <div class="tech-card"><b>LLM</b><span>LLMs & RAG</span></div>
+        <div class="tech-card"><b>Ol</b><span>Ollama</span></div>
+        <div class="tech-card"><b>DB</b><span>MySQL</span></div>
+        <div class="tech-card"><b>Git</b><span>Git & GitHub</span></div>
+      </div>
+    </section>
+
+    <section class="projects-section section-wrap section-divider" id="projects">
+      <div class="section-heading compact">
+        <p class="section-kicker">03 / SELECTED WORK</p>
+        <h2>Some Things<br><span>I've Built</span></h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-top"><span class="project-icon">⌁</span><span class="project-arrow">↗</span></div>
+          <p class="project-type">VOICE AI / PYTHON</p>
+          <h3>EVA — Voice Assistant</h3>
+          <p>A local voice assistant exploring speech interfaces, LLM integration and task automation.</p>
+          <div class="project-tags"><span>Python</span><span>LLMs</span><span>Speech</span></div>
+          <!-- Replace # with the EVA repository URL -->
+          <a class="card-link" href="#">Explore project <span>↗</span></a>
+        </article>
+        <article class="project-card">
+          <div class="project-top"><span class="project-icon">⌁</span><span class="project-arrow">↗</span></div>
+          <p class="project-type">MACHINE LEARNING / SIMULATION</p>
+          <h3>Radar Signal Simulator</h3>
+          <p>A simulation and ML experimentation project for studying weak-signal detection.</p>
+          <div class="project-tags"><span>Python</span><span>PyTorch</span><span>Signal ML</span></div>
+          <!-- Replace # with the project repository URL -->
+          <a class="card-link" href="#">Explore project <span>↗</span></a>
+        </article>
+        <article class="project-card">
+          <div class="project-top"><span class="project-icon">▱</span><span class="project-arrow">↗</span></div>
+          <p class="project-type">APPLICATION / PRODUCT</p>
+          <h3>Sahayi</h3>
+          <p>An application project focused on turning a practical idea into a usable digital product.</p>
+          <div class="project-tags"><span>Python</span><span>AI</span><span>Application</span></div>
+          <!-- Replace # with the Sahayi repository URL -->
+          <a class="card-link" href="#">Explore project <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section-wrap section-divider" id="contact">
+      <div>
+        <p class="section-kicker">04 / CONTACT</p>
+        <h2>Have an interesting<br><span>problem to solve?</span></h2>
+      </div>
+      <a class="button button-primary" href="mailto:YOUR_EMAIL@example.com">Let's Talk <span>↗</span></a>
     </section>
   </main>
+
+  <footer class="site-footer section-wrap">
+    <a class="brand" href="#home"><span class="brand-mark">╱╱</span> JOE</a>
+    <p>Designed & built by Joe Paul K · <span>AI/ML Engineer</span></p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      nav.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }));
+  </script>
 </body>
 </html>
