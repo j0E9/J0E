@@ -1,30 +1,28 @@
-JOE PAUL K — GITHUB PROFILE README PACKAGE
+JOE PAUL K — STATIC GITHUB PROFILE PACKAGE
 
-UPLOAD THESE FILES:
-1. Replace the repository root README.md with this package's README.md.
-2. Upload the complete hero/ folder, including background.jpg.
-3. Do not upload the original full-resolution Setup.png for this banner.
-4. Commit the changes to main.
+This version uses a STATIC high-quality PNG banner. There is no GIF,
+animation, SVG, HTML overlay, or grey text card.
 
-STRUCTURE:
+UPLOAD:
+1. Open your special profile repository: j0E9.
+2. Replace the root README.md with this package's README.md.
+3. Upload the assets folder with profile-hero.png inside it.
+4. Commit the changes to the main branch.
+
+REPOSITORY STRUCTURE:
 j0E9/
 ├── README.md
-└── hero/
-    ├── hero.gif              animated banner embedded in README
-    ├── background.jpg        compact 1000 x 350 banner background
-    ├── index.html            editable local HTML preview
-    ├── styles.css            editable CSS source
-    ├── build_gif.py          Python source that builds the animated GIF
-    └── requirements.txt
+└── assets/
+    └── profile-hero.png
 
-The compact background crop is centered around the DGX Spark unit beneath
-the monitors, while keeping the laptop, keyboard and mouse visible. The
-original full-resolution photo is not included in this ZIP.
+The banner contains only:
+- HELLO, I'M
+- JOE PAUL K
+- AI / ML ENGINEER
 
-REBUILD THE GIF LATER:
-From the repository root:
-    python -m pip install -r hero/requirements.txt
-    python hero/build_gif.py
+The README below it contains your CV-based summary, experience, selected
+projects, technical skills, strengths, current learning areas and education.
 
-GitHub README does not execute custom CSS/JavaScript. It displays hero.gif.
-The HTML/CSS are editable source files for local preview and future learning.
+NOTE:
+GitHub README supports displaying the PNG, but does not execute custom CSS.
+The banner is a regular PNG image, so you can replace or edit it independently.
