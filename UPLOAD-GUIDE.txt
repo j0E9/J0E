@@ -1,31 +1,40 @@
-JOE PAUL K — UPDATED GITHUB PROFILE PACKAGE
-=============================================
+JOE PAUL K — CV-ALIGNED GITHUB PROFILE UPDATE
+================================================
 
-This is the revised banner. It has a dark translucent panel behind all text,
-so the words remain readable against the workstation photo.
+This package updates your PROFILE README and animated hero banner.
 
-UPLOAD:
+WHAT CHANGED
+- Profile content is aligned with your uploaded CV.
+- Removed the phrase "Building practical AI solutions..." from the hero.
+- Removed the opaque grey/dark rectangular card completely.
+- Uses your existing Setup.png as the full background.
+- Animated text is layered directly over the photograph.
+- Text is positioned in the upper wall/curtain area to avoid covering the
+  monitors and the DGX Spark device on the desk.
+
+UPLOAD TO YOUR j0E9/j0E9 PROFILE REPOSITORY
 1. Replace the root README.md with this package's README.md.
-2. Upload the hero folder and all its contents.
-3. Keep your existing Setup.png in the repository root. Do not delete it.
-4. Commit changes to main.
+2. Replace the existing hero folder with this package's hero folder.
+3. Keep the existing Setup.png in the repository root. Do not delete it.
+4. Commit the changes to main.
 
-REPOSITORY STRUCTURE:
+EXPECTED STRUCTURE
 j0E9/
 ├── README.md
-├── Setup.png                 (keep your existing photo)
+├── Setup.png                 (existing background photo; keep it)
 └── hero/
-    ├── hero.gif              (animated banner displayed by README)
-    ├── index.html            (editable HTML preview source)
-    ├── styles.css            (editable CSS preview source)
-    ├── build_gif.py          (Python source that generates the GIF)
-    └── requirements.txt      (Pillow dependency)
+    ├── hero.gif              (animated banner shown in README)
+    ├── index.html            (editable HTML source)
+    ├── styles.css            (editable CSS source)
+    ├── build_gif.py          (Python source to regenerate the GIF)
+    └── requirements.txt
 
-REBUILD LATER:
+IMPORTANT
+GitHub README does not execute a separate CSS file. The README displays the
+generated hero.gif. You can edit the HTML/CSS and Python source, then regenerate
+hero.gif when you want to change the design or animation.
+
+TO REGENERATE LATER
 From the repository root:
-    python -m pip install -r hero/requirements.txt
-    python hero/build_gif.py
-
-GitHub README does not load custom CSS or JavaScript. The README displays the
-rendered GIF. Edit HTML/CSS for your local preview and edit build_gif.py to
-change the generated animated banner.
+  python -m pip install -r hero/requirements.txt
+  python hero/build_gif.py
